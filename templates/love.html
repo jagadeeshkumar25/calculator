@@ -1,0 +1,20 @@
+<html>
+     <head></head>
+      <>
+      <form action="{% url 'love' %}" method="post">
+          {% csrf_token %}
+
+           Boy: <input type="text" name="l1" placeholder="Boyname"><br>
+           Girl: <input type="text" name="l2" placeholder="Girlname"><br>
+            <button type="submit">submit</button>
+      </form>
+{#          {% for x in data %}#}
+                 <table align="center" border="2">
+                 {% for k,v in data.items %}
+
+                           <tr><th>{{ k }}</th><th>{{ v }}</th></tr>
+                {% endfor %}
+                 </table>
+
+      </body>
+</html>
